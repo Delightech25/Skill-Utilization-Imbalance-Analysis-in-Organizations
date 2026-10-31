@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+
+    <div class="col-lg-4">
+        <div class="card shadow-sm text-center mb-4">
+            <div class="card-body">
+                <h6 class="text-muted">Model Accuracy</h6>
+                <h2 class="text-success">{{ accuracy }}%</h2>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Imbalance Distribution</h6>
+                <canvas id="statusChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5>Recent Alerts</h5>
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Employee</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for alert in alerts %}
+                        <tr>
+                            <td>{{ alert.id }}</td>
+                            <td>{{ alert.employee_name }}</td>
+                            <td>{{ alert.status }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+new Chart(document.getElementById("statusChart"), {
+    type: "pie",
+    data: {
+        labels: ["Underutilized", "Balanced", "Overloaded"],
+        datasets: [{
+            data: {{ chart_data | safe }},
+            backgroundColor: ["#ffc107", "#198754", "#dc3545"]
+        }]
+    }
+});
+</script>
+
+{% endblock %}

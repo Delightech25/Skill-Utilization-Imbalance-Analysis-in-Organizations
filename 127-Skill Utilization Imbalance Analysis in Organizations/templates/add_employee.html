@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card shadow">
+  <div class="card-body">
+    <h4>Add Employee</h4>
+
+    <form method="POST">
+
+      <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Employee Skills</h6>
+          <input name="python" class="form-control mb-2" placeholder="Python" required>
+          <input name="ml" class="form-control mb-2" placeholder="ML" required>
+          <input name="sql" class="form-control mb-2" placeholder="SQL" required>
+          <input name="management" class="form-control mb-2" placeholder="Management" required>
+          <input name="cloud" class="form-control mb-2" placeholder="Cloud" required>
+        </div>
+
+        <div class="col-md-6">
+          <h6>Required Skills</h6>
+          <input name="r_python" class="form-control mb-2" placeholder="Python Required" required>
+          <input name="r_ml" class="form-control mb-2" placeholder="ML Required" required>
+          <input name="r_sql" class="form-control mb-2" placeholder="SQL Required" required>
+          <input name="r_management" class="form-control mb-2" placeholder="Management Required" required>
+          <input name="r_cloud" class="form-control mb-2" placeholder="Cloud Required" required>
+        </div>
+      </div>
+
+      <button class="btn btn-dark mt-3">Save & Analyze</button>
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}

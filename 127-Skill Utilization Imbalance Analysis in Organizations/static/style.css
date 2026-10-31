@@ -1,0 +1,70 @@
+body{
+font-family: Arial;
+background:#f4f6fb;
+margin:0;
+text-align:center;
+}
+
+/* Login + Register Cards */
+
+.card{
+background:white;
+width:350px;
+margin:auto;
+margin-top:120px;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+
+input{
+width:90%;
+padding:12px;
+margin:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* Buttons */
+
+button{
+padding:10px 20px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+
+/* Dashboard Boxes */
+
+.box{
+background:white;
+width:400px;
+margin:auto;
+margin-top:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+
+h2{
+margin-top:30px;
+}
+
+/* Logout */
+
+a{
+text-decoration:none;
+color:#007bff;
+font-weight:bold;
+}

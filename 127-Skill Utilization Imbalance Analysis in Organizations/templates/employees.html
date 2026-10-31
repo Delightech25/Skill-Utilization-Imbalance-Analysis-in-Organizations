@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="mb-3">Employees</h4>
+
+<div class="card shadow">
+  <div class="card-body">
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for emp in employees %}
+        <tr>
+          <td>{{ emp.id }}</td>
+          <td>{{ emp.name }}</td>
+          <td>
+            <span class="badge 
+              {% if emp.status == 'Underutilized' %}
+                bg-warning text-dark
+              {% elif emp.status == 'Overloaded' %}
+                bg-danger
+              {% else %}
+                bg-success
+              {% endif %}
+            ">
+              {{ emp.status }}
+            </span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+Name: Rahul
+
+Employee Skills:
+Python = 8
+ML = 7
+SQL = 6
+Management = 5
+Cloud = 7
+
+Required Skills:
+Python = 7
+ML = 6
+SQL = 6
+Management = 5
+Cloud = 6
+
+
+
+
+Name: Kiran
+
+Employee Skills:
+Python = 3
+ML = 4
+SQL = 2
+Management = 3
+Cloud = 3
+
+Required Skills:
+Python = 8
+ML = 7
+SQL = 6
+Management = 7
+Cloud = 8
+
+
+
+Name: Sneha
+
+Employee Skills:
+Python = 5
+ML = 5
+SQL = 5
+Management = 5
+Cloud = 5
+
+Required Skills:
+Python = 6
+ML = 5
+SQL = 4
+Management = 5
+Cloud = 6
+
+Name: Anjali
+Employee Skills:
+Python = 8
+ML = 7
+SQL = 8
+Management = 8
+Cloud = 9
+
+Required Skills:
+Python = 3
+ML = 5
+SQL = 4
+Management = 5
+Cloud = 6
+
+
+
